@@ -1,0 +1,99 @@
+<acceptance-test-run title="Searching by keyword apple should display the corresponding article" name="searching_by_keyword_apple_should_display_the_corresponding_article" steps="4" successful="3" failures="1" skipped="0" ignored="0" pending="0" result="FAILURE" duration="17279" timestamp="2014-07-01T22:31:09.449+03:00">
+  <user-story id="ThucydidesExample.requirements.Application.Search.SearchByKeyword" name="Search by keyword" path="ThucydidesExample.requirements.Application.Search">
+    <feature id="ThucydidesExample.requirements.Application.Search" name="Search"/>
+  </user-story>
+  <issues>
+    <issue>#WIKI-1</issue>
+  </issues>
+  <tags>
+    <tag name="Search" type="feature"/>
+    <tag name="Search by keyword" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="10634">
+    <screenshots>
+      <screenshot image="screenshot-9fdf6c7c3cca7edce756ab0ec9325f00c4e3b8e79340148a8638e2bb2a97bf4c1.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-group name="Looks for: {apple}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="screenshot-6d90844c0dfe3fcebc28a91c028f1f9c3b40d605f08cf8c494b01d37aefb6fa62.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1722">
+      <screenshots>
+        <screenshot image="screenshot-cf04c4c78239a4343cab4869f32bca5378317a4fd6268dd6647a04903983a99e4.png"/>
+      </screenshots>
+      <description>Enters: {apple}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2426">
+      <screenshots>
+        <screenshot image="screenshot-559fa95ef45be69d396d582728c298080a5f214792638bab9322c0fbe48d6c125.png"/>
+        <screenshot image="screenshot-559fa95ef45be69d396d582728c298080a5f214792638bab9322c0fbe48d6c126.png"/>
+      </screenshots>
+      <description>Starts search</description>
+    </test-step>
+  </test-group>
+  <test-step result="FAILURE" duration="1599">
+    <screenshots>
+      <screenshot image="screenshot-6c358671fbd90831914777242c3c4f1ef7efee39edf06f4224a37a9b8b4b41908.png"/>
+      <screenshot image="screenshot-6c358671fbd90831914777242c3c4f1ef7efee39edf06f4224a37a9b8b4b41909.png"/>
+    </screenshots>
+    <description>Should see definition: {A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.}</description>
+    <error>&lt;[&apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates. [from 9th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;Any of various tree-borne fruits or vegetables especially considered as resembling an apple; also (with qualifying words) used to form the names of other specific fruits such as custard apple, thorn apple etc. [from 9th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;The fruit of the Tree of Knowledge, eaten by Adam and Eve according to post-Biblical Christian tradition; the forbidden fruit. [from 11th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;A tree of the genus Malus, especially one cultivated for its edible fruit; the apple tree. [from 15th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;The wood of the apple tree. [from 19th c.]&apos;, &apos;(in the plural, Cockney rhyming slang) Short for apples and pears, slang for stairs. [from 20th c.]&apos;, &apos;(baseball, slang, obsolete) The ball in baseball. [from 20th c.]&apos;, &apos;(informal) When smiling, the round, fleshy part of the cheeks between the eyes and the corners of the mouth.&apos;]&gt; does not contain element(s):&lt;[&apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;]&gt;</error>
+    <exception>net.thucydides.core.steps.StepFailureException: &lt;[&apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates. [from 9th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;Any of various tree-borne fruits or vegetables especially considered as resembling an apple; also (with qualifying words) used to form the names of other specific fruits such as custard apple, thorn apple etc. [from 9th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;The fruit of the Tree of Knowledge, eaten by Adam and Eve according to post-Biblical Christian tradition; the forbidden fruit. [from 11th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;A tree of the genus Malus, especially one cultivated for its edible fruit; the apple tree. [from 15th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;The wood of the apple tree. [from 19th c.]&apos;, &apos;(in the plural, Cockney rhyming slang) Short for apples and pears, slang for stairs. [from 20th c.]&apos;, &apos;(baseball, slang, obsolete) The ball in baseball. [from 20th c.]&apos;, &apos;(informal) When smiling, the round, fleshy part of the cheeks between the eyes and the corners of the mouth.&apos;]&gt; does not contain element(s):&lt;[&apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;]&gt;&#xd;
+	at net.thucydides.core.steps.BaseStepListener.recordFailureDetailsInFailingTestStep(BaseStepListener.java:486)&#xd;
+	at net.thucydides.core.steps.BaseStepListener.stepFailed(BaseStepListener.java:474)&#xd;
+	at net.thucydides.core.steps.StepEventBus.stepFailed(StepEventBus.java:298)&#xd;
+	at net.thucydides.core.steps.StepInterceptor.notifyOfStepFailure(StepInterceptor.java:366)&#xd;
+	at net.thucydides.core.steps.StepInterceptor.logStepFailure(StepInterceptor.java:272)&#xd;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:260)&#xd;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:127)&#xd;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:53)&#xd;
+	at ThucydidesExample.steps.EndUserSteps$$EnhancerByCGLIB$$e7d2f284.should_see_definition(&lt;generated&gt;)&#xd;
+	at ThucydidesExample.SearchByKeywordStoryTest.searching_by_keyword_apple_should_display_the_corresponding_article(SearchByKeywordStoryTest.java:31)&#xd;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xd;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#xd;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xd;
+	at java.lang.reflect.Method.invoke(Method.java:601)&#xd;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)&#xd;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#xd;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)&#xd;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)&#xd;
+	at net.thucydides.junit.runners.ThucydidesStatement.evaluate(ThucydidesStatement.java:21)&#xd;
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)&#xd;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)&#xd;
+	at net.thucydides.junit.runners.ThucydidesRunner.runChild(ThucydidesRunner.java:413)&#xd;
+	at net.thucydides.junit.runners.ThucydidesRunner.runChild(ThucydidesRunner.java:64)&#xd;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#xd;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)&#xd;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)&#xd;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)&#xd;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)&#xd;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)&#xd;
+	at net.thucydides.junit.runners.ThucydidesRunner.run(ThucydidesRunner.java:239)&#xd;
+	at org.apache.maven.surefire.junitcore.ClassDemarcatingRunner.run(ClassDemarcatingRunner.java:58)&#xd;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#xd;
+	at org.junit.runners.Suite.runChild(Suite.java:24)&#xd;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#xd;
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)&#xd;
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)&#xd;
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)&#xd;
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)&#xd;
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)&#xd;
+	at java.lang.Thread.run(Thread.java:722)&#xd;
+Caused by: java.lang.AssertionError: &lt;[&apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates. [from 9th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;Any of various tree-borne fruits or vegetables especially considered as resembling an apple; also (with qualifying words) used to form the names of other specific fruits such as custard apple, thorn apple etc. [from 9th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;The fruit of the Tree of Knowledge, eaten by Adam and Eve according to post-Biblical Christian tradition; the forbidden fruit. [from 11th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;A tree of the genus Malus, especially one cultivated for its edible fruit; the apple tree. [from 15th c.]  [quotations ▼]&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;&apos;, &apos;The wood of the apple tree. [from 19th c.]&apos;, &apos;(in the plural, Cockney rhyming slang) Short for apples and pears, slang for stairs. [from 20th c.]&apos;, &apos;(baseball, slang, obsolete) The ball in baseball. [from 20th c.]&apos;, &apos;(informal) When smiling, the round, fleshy part of the cheeks between the eyes and the corners of the mouth.&apos;]&gt; does not contain element(s):&lt;[&apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;]&gt;&#xd;
+	at org.fest.assertions.Fail.failure(Fail.java:228)&#xd;
+	at org.fest.assertions.Assert.failure(Assert.java:149)&#xd;
+	at org.fest.assertions.ItemGroupAssert.failureIfExpectedElementsNotFound(ItemGroupAssert.java:102)&#xd;
+	at org.fest.assertions.ItemGroupAssert.assertContains(ItemGroupAssert.java:57)&#xd;
+	at org.fest.assertions.ObjectGroupAssert.contains(ObjectGroupAssert.java:51)&#xd;
+	at ThucydidesExample.steps.EndUserSteps.should_see_definition(EndUserSteps.java:27)&#xd;
+	at ThucydidesExample.steps.EndUserSteps$$EnhancerByCGLIB$$e7d2f284.CGLIB$should_see_definition$2(&lt;generated&gt;)&#xd;
+	at ThucydidesExample.steps.EndUserSteps$$EnhancerByCGLIB$$e7d2f284$$FastClassByCGLIB$$b992436c.invoke(&lt;generated&gt;)&#xd;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#xd;
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:278)&#xd;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:256)&#xd;
+	... 34 more&#xd;
+</exception>
+  </test-step>
+</acceptance-test-run>

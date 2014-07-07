@@ -1,0 +1,40 @@
+<acceptance-test-run title="Searching by keyword banana should display the corresponding article" name="searching_by_keyword_banana_should_display_the_corresponding_article" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5433" timestamp="2014-07-01T22:31:26.870+03:00">
+  <user-story id="ThucydidesExample.requirements.Application.Search.SearchByKeyword" name="Search by keyword" path="ThucydidesExample.requirements.Application.Search">
+    <feature id="ThucydidesExample.requirements.Application.Search" name="Search"/>
+  </user-story>
+  <tags>
+    <tag name="Search" type="feature"/>
+    <tag name="Search by keyword" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="1448">
+    <screenshots>
+      <screenshot image="screenshot-e96036999131f02fdcbcd41a0cf41dcaacab2b4346a06b628e40f7c5f1b2120110.png"/>
+      <screenshot image="screenshot-e96036999131f02fdcbcd41a0cf41dcaacab2b4346a06b628e40f7c5f1b2120111.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-group name="Looks for: {pear}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="screenshot-d7c2d2f5b0a89a442328e9848ad8f776e9052a837e0bfc9cf5cd707c93225f3017.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="612">
+      <screenshots>
+        <screenshot image="screenshot-f697e4c7cde32ef24c4f1ed3ce55fdc6733f55bc04847d53c6b3b581024689a514.png"/>
+      </screenshots>
+      <description>Enters: {pear}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1784">
+      <screenshots>
+        <screenshot image="screenshot-d7c2d2f5b0a89a442328e9848ad8f776e9052a837e0bfc9cf5cd707c93225f3015.png"/>
+        <screenshot image="screenshot-d7c2d2f5b0a89a442328e9848ad8f776e9052a837e0bfc9cf5cd707c93225f3016.png"/>
+      </screenshots>
+      <description>Starts search</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="940">
+    <screenshots>
+      <screenshot image="screenshot-401e2408bfb4ed869739fd2a7c5f5c47c75bb2629323d51b32a7c74d7fc2919f18.png"/>
+    </screenshots>
+    <description>Should see definition: {An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.}</description>
+  </test-step>
+</acceptance-test-run>

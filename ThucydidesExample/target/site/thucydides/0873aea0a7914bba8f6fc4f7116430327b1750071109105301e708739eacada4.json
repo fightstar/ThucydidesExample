@@ -1,0 +1,129 @@
+{
+  "title": "Searching by keyword banana should display the corresponding article",
+  "name": "searching_by_keyword_banana_should_display_the_corresponding_article",
+  "test-case": {
+    "classname": "ThucydidesExample.SearchByKeywordStoryTest",
+    "issues": [
+      "#WIKI-1"
+    ]
+  },
+  "result": "SUCCESS",
+  "steps": "4",
+  "successful": "4",
+  "failures": "0",
+  "skipped": "0",
+  "ignored": "0",
+  "pending": "0",
+  "duration": "5433",
+  "timestamp": "2014-07-01T22:31:26.870+03:00",
+  "user-story": {
+    "userStoryClass": {
+      "classname": "ThucydidesExample.requirements.Application$Search$SearchByKeyword"
+    },
+    "qualifiedStoryClassName": "ThucydidesExample.requirements.Application.Search.SearchByKeyword",
+    "storyName": "Search by keyword",
+    "path": "ThucydidesExample.requirements.Application.Search",
+    "qualifiedFeatureClassName": "ThucydidesExample.requirements.Application.Search",
+    "featureName": "Search"
+  },
+  "issues": [],
+  "versions": [],
+  "tags": [
+    {
+      "name": "Search",
+      "type": "feature"
+    },
+    {
+      "name": "Search by keyword",
+      "type": "story"
+    }
+  ],
+  "test-steps": [
+    {
+      "number": 1,
+      "description": "Is the home page",
+      "duration": 1448,
+      "startTime": 1404243086874,
+      "screenshots": [
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-e96036999131f02fdcbcd41a0cf41dcaacab2b4346a06b628e40f7c5f1b2120110.png"
+          }
+        },
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-e96036999131f02fdcbcd41a0cf41dcaacab2b4346a06b628e40f7c5f1b2120111.png"
+          }
+        }
+      ],
+      "result": "SUCCESS",
+      "children": []
+    },
+    {
+      "number": 2,
+      "description": "Looks for: {pear}",
+      "duration": 3038,
+      "startTime": 1404243088323,
+      "screenshots": [
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-d7c2d2f5b0a89a442328e9848ad8f776e9052a837e0bfc9cf5cd707c93225f3017.png"
+          }
+        }
+      ],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 3,
+          "description": "Enters: {pear}",
+          "duration": 612,
+          "startTime": 1404243088478,
+          "screenshots": [
+            {
+              "screenshot": {
+                "path": "target\\site\\thucydides\\screenshot-f697e4c7cde32ef24c4f1ed3ce55fdc6733f55bc04847d53c6b3b581024689a514.png"
+              }
+            }
+          ],
+          "result": "SUCCESS",
+          "children": []
+        },
+        {
+          "number": 4,
+          "description": "Starts search",
+          "duration": 1784,
+          "startTime": 1404243089091,
+          "screenshots": [
+            {
+              "screenshot": {
+                "path": "target\\site\\thucydides\\screenshot-d7c2d2f5b0a89a442328e9848ad8f776e9052a837e0bfc9cf5cd707c93225f3015.png"
+              }
+            },
+            {
+              "screenshot": {
+                "path": "target\\site\\thucydides\\screenshot-d7c2d2f5b0a89a442328e9848ad8f776e9052a837e0bfc9cf5cd707c93225f3016.png"
+              }
+            }
+          ],
+          "result": "SUCCESS",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "description": "Should see definition: {An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.}",
+      "duration": 940,
+      "startTime": 1404243091362,
+      "screenshots": [
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-401e2408bfb4ed869739fd2a7c5f5c47c75bb2629323d51b32a7c74d7fc2919f18.png"
+          }
+        }
+      ],
+      "result": "SUCCESS",
+      "children": []
+    }
+  ]
+}

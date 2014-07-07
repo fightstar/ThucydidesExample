@@ -1,0 +1,135 @@
+{
+  "title": "Searching by keyword apple should display the corresponding article",
+  "name": "searching_by_keyword_apple_should_display_the_corresponding_article",
+  "test-case": {
+    "classname": "ThucydidesExample.SearchByKeywordStoryTest",
+    "issues": [
+      "#WIKI-1"
+    ]
+  },
+  "result": "FAILURE",
+  "steps": "4",
+  "successful": "3",
+  "failures": "1",
+  "skipped": "0",
+  "ignored": "0",
+  "pending": "0",
+  "duration": "17279",
+  "timestamp": "2014-07-01T22:31:09.449+03:00",
+  "user-story": {
+    "userStoryClass": {
+      "classname": "ThucydidesExample.requirements.Application$Search$SearchByKeyword"
+    },
+    "qualifiedStoryClassName": "ThucydidesExample.requirements.Application.Search.SearchByKeyword",
+    "storyName": "Search by keyword",
+    "path": "ThucydidesExample.requirements.Application.Search",
+    "qualifiedFeatureClassName": "ThucydidesExample.requirements.Application.Search",
+    "featureName": "Search"
+  },
+  "issues": [
+    "#WIKI-1"
+  ],
+  "versions": [],
+  "tags": [
+    {
+      "name": "Search",
+      "type": "feature"
+    },
+    {
+      "name": "Search by keyword",
+      "type": "story"
+    }
+  ],
+  "test-steps": [
+    {
+      "number": 1,
+      "description": "Is the home page",
+      "duration": 10634,
+      "startTime": 1404243069648,
+      "screenshots": [
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-9fdf6c7c3cca7edce756ab0ec9325f00c4e3b8e79340148a8638e2bb2a97bf4c1.png"
+          }
+        }
+      ],
+      "result": "SUCCESS",
+      "children": []
+    },
+    {
+      "number": 2,
+      "description": "Looks for: {apple}",
+      "duration": 4833,
+      "startTime": 1404243080283,
+      "screenshots": [
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-6d90844c0dfe3fcebc28a91c028f1f9c3b40d605f08cf8c494b01d37aefb6fa62.png"
+          }
+        }
+      ],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 3,
+          "description": "Enters: {apple}",
+          "duration": 1722,
+          "startTime": 1404243080441,
+          "screenshots": [
+            {
+              "screenshot": {
+                "path": "target\\site\\thucydides\\screenshot-cf04c4c78239a4343cab4869f32bca5378317a4fd6268dd6647a04903983a99e4.png"
+              }
+            }
+          ],
+          "result": "SUCCESS",
+          "children": []
+        },
+        {
+          "number": 4,
+          "description": "Starts search",
+          "duration": 2426,
+          "startTime": 1404243082164,
+          "screenshots": [
+            {
+              "screenshot": {
+                "path": "target\\site\\thucydides\\screenshot-559fa95ef45be69d396d582728c298080a5f214792638bab9322c0fbe48d6c125.png"
+              }
+            },
+            {
+              "screenshot": {
+                "path": "target\\site\\thucydides\\screenshot-559fa95ef45be69d396d582728c298080a5f214792638bab9322c0fbe48d6c126.png"
+              }
+            }
+          ],
+          "result": "SUCCESS",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "description": "Should see definition: {A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.}",
+      "duration": 1599,
+      "startTime": 1404243085117,
+      "screenshots": [
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-6c358671fbd90831914777242c3c4f1ef7efee39edf06f4224a37a9b8b4b41908.png"
+          }
+        },
+        {
+          "screenshot": {
+            "path": "target\\site\\thucydides\\screenshot-6c358671fbd90831914777242c3c4f1ef7efee39edf06f4224a37a9b8b4b41909.png"
+          }
+        }
+      ],
+      "cause": {
+        "class": "net.thucydides.core.steps.StepFailureException",
+        "message": "\u003c[\u0027A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates. [from 9th c.]  [quotations ▼]\u0027, \u0027\u0027, \u0027\u0027, \u0027\u0027, \u0027Any of various tree-borne fruits or vegetables especially considered as resembling an apple; also (with qualifying words) used to form the names of other specific fruits such as custard apple, thorn apple etc. [from 9th c.]  [quotations ▼]\u0027, \u0027\u0027, \u0027\u0027, \u0027\u0027, \u0027The fruit of the Tree of Knowledge, eaten by Adam and Eve according to post-Biblical Christian tradition; the forbidden fruit. [from 11th c.]  [quotations ▼]\u0027, \u0027\u0027, \u0027\u0027, \u0027A tree of the genus Malus, especially one cultivated for its edible fruit; the apple tree. [from 15th c.]  [quotations ▼]\u0027, \u0027\u0027, \u0027\u0027, \u0027\u0027, \u0027\u0027, \u0027The wood of the apple tree. [from 19th c.]\u0027, \u0027(in the plural, Cockney rhyming slang) Short for apples and pears, slang for stairs. [from 20th c.]\u0027, \u0027(baseball, slang, obsolete) The ball in baseball. [from 20th c.]\u0027, \u0027(informal) When smiling, the round, fleshy part of the cheeks between the eyes and the corners of the mouth.\u0027]\u003e does not contain element(s):\u003c[\u0027A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.\u0027]\u003e"
+      },
+      "result": "FAILURE",
+      "children": []
+    }
+  ]
+}
